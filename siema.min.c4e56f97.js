@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"siema.min.js":[function(require,module,exports) {
+})({"js/siema.min.js":[function(require,module,exports) {
 var define;
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -514,7 +514,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50663" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51284" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -690,5 +690,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","siema.min.js"], null)
-//# sourceMappingURL=/siema.min.2145e57a.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/siema.min.js"], null)
+//# sourceMappingURL=/siema.min.c4e56f97.js.map
