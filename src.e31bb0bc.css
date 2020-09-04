@@ -537,6 +537,10 @@ a {
 }
 .header {
   position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -548,7 +552,6 @@ a {
   position: relative;
   z-index: 11;
   background-color: transparent;
-  margin-top: 7px;
   padding: 0;
   border: none;
   cursor: pointer;
@@ -623,7 +626,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .header {
-    justify-content: start;
+    justify-content: space-between;
     padding-top: 37px;
   }
 
@@ -927,6 +930,178 @@ a {
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) {
   .hero .container {
     background-image: url(/icecream@2x.7ca69d6f.png), url(/soo-tasty@2x.9a3447c8.png), url(/cup-milk@2x.f53860db.png), url(/ellipse.218813aa.svg);
+  }
+}
+.howitsmade {
+  padding-top: 125px;
+  background-color: #fff5f6;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+}
+
+.howitsmade-description {
+  text-align: center;
+  font-family: "Titan One", cursive;
+  color: #ffa5ba;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+
+.howitsmade-title {
+  text-align: center;
+  font-family: "Titan One", cursive;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
+  color: #d41443;
+}
+
+.howitsmade-wrapper {
+  display: flex;
+}
+
+.content-description {
+  color: #907e82;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.content-description:first-child {
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .howitsmade-description {
+    font-size: 18px;
+    line-height: 1.16;
+  }
+
+  .howitsmade-title {
+    font-size: 34px;
+    line-height: 1.147;
+    margin-bottom: 26px;
+  }
+
+  .howitsmade-image {
+    width: 280px;
+    height: 279px;
+    margin-bottom: 26px;
+  }
+
+  .howitsmade-wrapper {
+    flex-direction: column;
+  }
+
+  .content-wrapper {
+    width: 220px;
+    margin: auto;
+  }
+
+  .content-description {
+    font-size: 12px;
+    line-height: 1.162;
+    margin-bottom: 17px;
+  }
+  .content-description:first-child {
+    font-size: 12px;
+    line-height: 1.162;
+  }
+  .content-description:last-child {
+    margin-bottom: 17px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .howitsmade {
+    background: none;
+  }
+
+  .howitsmade-description {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  .howitsmade-title {
+    font-size: 48px;
+    line-height: 1.14;
+    margin-bottom: 50px;
+  }
+
+  .howitsmade-wrapper {
+    flex-direction: row;
+  }
+
+  .howitsmade-image {
+    width: 340px;
+    height: 339px;
+    margin-bottom: 50px;
+    margin-right: 17px;
+  }
+
+  .content-wrapper {
+    width: 340px;
+  }
+
+  .content-description {
+    font-size: 14px;
+    line-height: 1.94;
+    margin-bottom: 30px;
+  }
+  .content-description:first-child {
+    font-size: 14px;
+    line-height: 1.76;
+    padding-top: 50px;
+  }
+  .content-description:last-child {
+    margin-bottom: 62px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howitsmade {
+    background-image: url(/milk.13a1d1d0.png);
+    background-size: 1282px 534px;
+    background-position: 50% 50%;
+  }
+
+  .howitsmade-description {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
+  .howitsmade-title {
+    font-size: 58px;
+    line-height: 1.13;
+    margin-bottom: 58px;
+  }
+
+  .howitsmade-image {
+    width: 516px;
+    height: 516px;
+    margin-right: 74px;
+    margin-bottom: 0px;
+  }
+
+  .content-wrapper {
+    width: 463px;
+  }
+
+  .content-description {
+    font-size: 14px;
+    line-height: 1.94;
+    margin-bottom: 35px;
+  }
+  .content-description:first-child {
+    font-size: 16px;
+    line-height: 1.76;
+    padding-top: 51px;
+  }
+  .content-description:last-child {
+    margin-bottom: 45px;
   }
 }
 p {
@@ -1286,8 +1461,8 @@ p {
   width: 100%;
   max-width: 77rem;
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 86px;
+  padding-top: 154px;
+  padding-bottom: 170px;
 }
 
 .testimonial-item {
@@ -1381,8 +1556,8 @@ p {
 
 @media screen and (min-width: 768px) {
   .section-slider {
-    padding-top: 121px;
-    padding-bottom: 119px;
+    padding-top: 279px;
+    padding-bottom: 197px;
   }
 
   .testimonial-picture {
@@ -1414,8 +1589,8 @@ p {
 }
 @media screen and (min-width: 1280px) {
   .section-slider {
-    padding-top: 123px;
-    padding-bottom: 132px;
+    padding-top: 382px;
+    padding-bottom: 234px;
   }
 
   .testimonial-picture {
@@ -1485,8 +1660,8 @@ p {
 }
 
 .join-us-icon {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   margin: auto;
   fill: #ffffff;
 }
@@ -1511,11 +1686,11 @@ p {
 .footer-number {
   padding-top: 50px;
 }
-.footer-number .footer-contact {
+.footer-number p {
   font-weight: bold;
   font-style: normal;
 }
-.footer-number .footer-contact .footer-phone {
+.footer-number p span {
   color: #d41443;
   padding-left: 5px;
 }
@@ -1594,32 +1769,8 @@ p {
   .footer-mnemo .footer-icecream {
     font-size: 14px;
     line-height: 152%;
-    padding: 22px;
+    padding: 22px 28%;
   }
-}
-.join-us {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 43px;
-  margin-bottom: 46px;
-  text-decoration: none;
-  margin-right: 21px;
-}
-
-.join-us-tag {
-  display: inline-flex;
-  width: 32px;
-  height: 32px;
-  background: #fea5bb;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.join-us-icon {
-  width: 20px;
-  height: 20px;
-  margin: auto;
-  fill: #ffffff;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
