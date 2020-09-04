@@ -831,7 +831,7 @@ a {
   }
 
   .counter-wrapper {
-    right: 12px;
+    right: 34px;
     top: 94px;
   }
 
@@ -934,6 +934,7 @@ a {
 }
 .howitsmade {
   padding-top: 125px;
+  padding-bottom: 20px;
   background-color: #fff5f6;
   margin-left: auto;
   margin-right: auto;
@@ -1002,6 +1003,9 @@ a {
     width: 220px;
     margin: auto;
   }
+  .content-wrapper .action-button {
+    margin-bottom: 39px;
+  }
 
   .content-description {
     font-size: 12px;
@@ -1018,7 +1022,7 @@ a {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .howitsmade {
-    background: none;
+    background-image: none;
   }
 
   .howitsmade-description {
@@ -1045,6 +1049,9 @@ a {
 
   .content-wrapper {
     width: 340px;
+  }
+  .content-wrapper .action-button {
+    margin-bottom: 66px;
   }
 
   .content-description {
@@ -1088,6 +1095,9 @@ a {
 
   .content-wrapper {
     width: 463px;
+  }
+  .content-wrapper .action-button {
+    margin-bottom: 146px;
   }
 
   .content-description {
@@ -1328,8 +1338,189 @@ p {
     line-height: 1.75;
   }
 }
-.itsmade {
+.howitsmade {
+  padding-top: 125px;
+  padding-bottom: 20px;
   background-color: #fff5f6;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+}
+
+.howitsmade-description {
+  text-align: center;
+  font-family: "Titan One", cursive;
+  color: #ffa5ba;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+
+.howitsmade-title {
+  text-align: center;
+  font-family: "Titan One", cursive;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
+  color: #d41443;
+}
+
+.howitsmade-wrapper {
+  display: flex;
+}
+
+.content-description {
+  color: #907e82;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.content-description:first-child {
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .howitsmade-description {
+    font-size: 18px;
+    line-height: 1.16;
+  }
+
+  .howitsmade-title {
+    font-size: 34px;
+    line-height: 1.147;
+    margin-bottom: 26px;
+  }
+
+  .howitsmade-image {
+    width: 280px;
+    height: 279px;
+    margin-bottom: 26px;
+  }
+
+  .howitsmade-wrapper {
+    flex-direction: column;
+  }
+
+  .content-wrapper {
+    width: 220px;
+    margin: auto;
+  }
+  .content-wrapper .action-button {
+    margin-bottom: 39px;
+  }
+
+  .content-description {
+    font-size: 12px;
+    line-height: 1.162;
+    margin-bottom: 17px;
+  }
+  .content-description:first-child {
+    font-size: 12px;
+    line-height: 1.162;
+  }
+  .content-description:last-child {
+    margin-bottom: 17px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .howitsmade {
+    background-image: none;
+  }
+
+  .howitsmade-description {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  .howitsmade-title {
+    font-size: 48px;
+    line-height: 1.14;
+    margin-bottom: 50px;
+  }
+
+  .howitsmade-wrapper {
+    flex-direction: row;
+  }
+
+  .howitsmade-image {
+    width: 340px;
+    height: 339px;
+    margin-bottom: 50px;
+    margin-right: 17px;
+  }
+
+  .content-wrapper {
+    width: 340px;
+  }
+  .content-wrapper .action-button {
+    margin-bottom: 66px;
+  }
+
+  .content-description {
+    font-size: 14px;
+    line-height: 1.94;
+    margin-bottom: 30px;
+  }
+  .content-description:first-child {
+    font-size: 14px;
+    line-height: 1.76;
+    padding-top: 50px;
+  }
+  .content-description:last-child {
+    margin-bottom: 62px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howitsmade {
+    background-image: url(/milk.13a1d1d0.png);
+    background-size: 1282px 534px;
+    background-position: 50% 50%;
+  }
+
+  .howitsmade-description {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
+  .howitsmade-title {
+    font-size: 58px;
+    line-height: 1.13;
+    margin-bottom: 58px;
+  }
+
+  .howitsmade-image {
+    width: 516px;
+    height: 516px;
+    margin-right: 74px;
+    margin-bottom: 0px;
+  }
+
+  .content-wrapper {
+    width: 463px;
+  }
+  .content-wrapper .action-button {
+    margin-bottom: 146px;
+  }
+
+  .content-description {
+    font-size: 14px;
+    line-height: 1.94;
+    margin-bottom: 35px;
+  }
+  .content-description:first-child {
+    font-size: 16px;
+    line-height: 1.76;
+    padding-top: 51px;
+  }
+  .content-description:last-child {
+    margin-bottom: 45px;
+  }
+}
+.itsmade {
   position: relative;
 }
 
@@ -1349,6 +1540,13 @@ p {
 
 .itsmade-list-item-text {
   font-weight: 700;
+}
+
+.itsmade-gallery_picture {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -85px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -1377,12 +1575,6 @@ p {
   .itsmade-list-item-text {
     font-size: 12px;
     line-height: 1.66;
-  }
-
-  .itsmade-gallery_picture {
-    position: absolute;
-    bottom: -9%;
-    left: 0%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1414,9 +1606,7 @@ p {
   }
 
   .itsmade-gallery_picture {
-    position: absolute;
-    bottom: -101%;
-    left: 0%;
+    top: 329px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1448,9 +1638,7 @@ p {
   }
 
   .itsmade-gallery_picture {
-    position: absolute;
-    bottom: -152%;
-    left: 0%;
+    top: 287px;
   }
 }
 .siema {
@@ -1531,16 +1719,31 @@ p {
   padding-bottom: 30px;
 }
 
+.btn-wraper {
+  display: flex;
+  justify-content: center;
+}
+
 .slider-btn {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: #e5e5e5;
   border: 1px solid transparent;
+  padding: 0;
+  cursor: pointer;
+}
+.slider-btn:focus, .slider-btn:hover {
+  background-color: #c7133e;
 }
 
 .btn0 {
   padding: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+.btn0:focus, .btn0:hover {
   background-color: transparent;
 }
 
