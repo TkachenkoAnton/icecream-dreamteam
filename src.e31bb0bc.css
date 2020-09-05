@@ -356,7 +356,6 @@ body {
   font-style: normal;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
-  overflow: hidden;
 }
 
 ul,
@@ -601,7 +600,7 @@ a {
   .header-menu {
     position: absolute;
     z-index: 10;
-    left: 100%;
+    right: 0;
     top: 0;
     width: 250px;
     opacity: 0;
@@ -609,11 +608,10 @@ a {
     padding-top: 60px;
     padding-bottom: 148px;
     background-color: #e17992;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-menu.is-open {
     opacity: 1;
-    transform: translateX(-100%);
     pointer-events: all;
   }
   .header-menu .action-button {
