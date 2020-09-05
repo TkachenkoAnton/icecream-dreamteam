@@ -140,7 +140,7 @@
 
 @media screen and (max-width: 767px) {
   .locations {
-    // margin-top: 170px;
+    padding-bottom: 29px;
     background-color: $second-background-color;
 
     & .container {
@@ -172,14 +172,12 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .locations {
-    // margin-top: 197px;
+    padding-bottom: 68px;
     background-color: $second-background-color;
 
     & .container {
       position: relative;
       bottom: 90px;
-      padding-left: 26px;
-      padding-right: 26px;
     }
   }
 
