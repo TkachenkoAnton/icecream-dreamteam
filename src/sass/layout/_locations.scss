@@ -179,6 +179,29 @@
     display: flex;
     justify-content: center;
   }
+
+  .locations-button {
+    .action-button {
+      &:first-child {
+        margin-right: 15px;
+      }
+
+      &.second-button {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-right: 37px;
+        padding-left: 37px;
+      }
+
+      &.arrow {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-right: 33px;
+        padding-left: 30px;
+        margin-bottom: 0px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -264,31 +287,6 @@
   .locations-contacts-mail {
     font-size: 14px;
     line-height: 1.86;
-  }
-
-  .locations-button {
-    flex-wrap: nowrap;
-
-    .action-button {
-      &:first-child {
-        margin-right: 15px;
-      }
-
-      &.second-button {
-        padding-top: 11px;
-        padding-bottom: 11px;
-        padding-right: 37px;
-        padding-left: 37px;
-      }
-
-      &.arrow {
-        padding-top: 11px;
-        padding-bottom: 11px;
-        padding-right: 33px;
-        padding-left: 30px;
-        margin-bottom: 0px;
-      }
-    }
   }
 }
 
