@@ -1,8 +1,6 @@
 .header {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 20;
   display: flex;
   justify-content: space-between;
@@ -99,7 +97,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    justify-content: space-between;
+    // justify-content: space-between;
     padding-top: 37px;
   }
 
@@ -135,6 +133,8 @@
 
 @media screen and (min-width: 1200px) {
   .header {
+    left: 50%;
+    transform: translateX(-50%);
     padding-left: 6px;
     justify-content: space-between;
     padding-top: 38px;
