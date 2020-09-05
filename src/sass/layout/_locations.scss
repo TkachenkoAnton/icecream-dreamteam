@@ -90,17 +90,6 @@
 }
 
 .locations-button {
-  // padding-bottom: 29px;
-  align-items: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  // flex-wrap: wrap;
-  justify-content: center;
-}
-
-.locations-button {
   .action-button {
     border-radius: 44px;
 
@@ -166,9 +155,31 @@
       margin-bottom: 20px;
     }
   }
+  .locations-button {
+    .action-button {
+      margin-right: auto;
+      margin-left: auto;
+      &.second-button {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
 }
 
 // Стили для планшета ======================
+
+@media screen and (min-width: 768px) {
+  .locations-button {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .locations {
@@ -256,7 +267,6 @@
   }
 
   .locations-button {
-    // padding-bottom: 70px;
     flex-wrap: nowrap;
 
     .action-button {
@@ -372,7 +382,6 @@
   }
 
   .locations-button {
-    // padding-bottom: 55px;
     flex-wrap: nowrap;
 
     .action-button {
