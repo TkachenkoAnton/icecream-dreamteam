@@ -650,7 +650,7 @@ a {
 
   .header-menu {
     padding-top: 44px;
-    padding-bottom: 689px;
+    padding-bottom: 680px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -984,7 +984,7 @@ a {
   .howitsmade {
     background-image: url(/milk-mob.89608f34.png);
     background-size: 320px 133px;
-    background-position: 50% 50%;
+    background-position: 50% 46%;
   }
 
   .howitsmade-description {
@@ -1406,7 +1406,7 @@ p {
   .howitsmade {
     background-image: url(/milk-mob.89608f34.png);
     background-size: 320px 133px;
-    background-position: 50% 50%;
+    background-position: 50% 46%;
   }
 
   .howitsmade-description {
