@@ -1677,10 +1677,6 @@ p {
     top: 287px;
   }
 }
-.siema {
-  margin: 1rem 0;
-}
-
 .section-slider {
   width: 100%;
   max-width: 77rem;
@@ -1690,17 +1686,15 @@ p {
 }
 
 .testimonial-item {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  align-items: center;
 }
 
 .testimonial-picture {
   width: 85px;
   height: 85px;
-  align-items: center;
+  margin-right: auto;
   margin-bottom: 29px;
+  margin-left: auto;
 }
 
 .text-testimonial {
@@ -1727,7 +1721,9 @@ p {
   width: 280px;
   height: 308px;
   background-color: #fff5f6;
+  margin-right: auto;
   margin-bottom: 30px;
+  margin-left: auto;
 }
 
 .icon-gap {
@@ -1755,42 +1751,55 @@ p {
   padding-bottom: 30px;
 }
 
-.btn-wraper {
-  display: flex;
-  justify-content: center;
+/* Точки (булиты) */
+.testimonial-slider {
+  /* Активная точка */
+  /* Элемент точки */
 }
-
-.slider-btn {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #e5e5e5;
-  border: 1px solid transparent;
-  padding: 0;
-  cursor: pointer;
-}
-.slider-btn:focus, .slider-btn:hover {
-  background-color: #c7133e;
-}
-
-.btn0 {
-  padding: 0;
-  background-color: transparent;
+.testimonial-slider .slick-dots {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.btn0:focus, .btn0:hover {
-  background-color: transparent;
+.testimonial-slider .slick-dots li {
+  cursor: pointer;
 }
-
-.slider-btn + .slider-btn {
-  margin-left: 18px;
+.testimonial-slider .slick-dots li:not(:last-child) {
+  margin-right: 18px;
 }
-
-.icon-home {
+.testimonial-slider .slick-dots li:first-child {
   width: 12px;
   height: 12px;
-  fill: #d41443;
+  background-image: url(/home.3b3d998d.svg);
+  background-size: contain;
+  overflow: hidden;
+}
+.testimonial-slider .slick-dots li:first-child:active, .testimonial-slider .slick-dots li:first-child:hover, .testimonial-slider .slick-dots li:first-child:focus {
+  border: dotted 0.1px black;
+}
+.testimonial-slider .slick-dots li:first-child button {
+  background-color: transparent;
+  width: 0px;
+  height: 0px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.testimonial-slider .slick-dots li.slick-active button {
+  background-color: #d31342;
+}
+.testimonial-slider .slick-dots li button {
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: #d9d9d9;
 }
 
 @media screen and (min-width: 768px) {
@@ -1826,7 +1835,7 @@ p {
     padding-bottom: 35px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .section-slider {
     padding-top: 382px;
     padding-bottom: 234px;
