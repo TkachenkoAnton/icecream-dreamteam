@@ -1,3 +1,6 @@
 $(document).ready(function () {
-  $('.scriptslider').slick();
+  $('.testimonial-slider').slick({
+    arrows: false,
+    dots: true,
+  });
 });
