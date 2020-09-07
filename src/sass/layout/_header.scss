@@ -72,20 +72,20 @@
   .header-menu {
     position: absolute;
     z-index: 10;
-    left: 100%;
+    right: 0;
     top: 0;
     width: 250px;
+    height: 100vh;
     opacity: 0;
     pointer-events: none;
     padding-top: 60px;
-    padding-bottom: 171px;
+    padding-bottom: 148px;
     background-color: #e17992;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
       opacity: 1;
-      transform: translateX(-100%);
       pointer-events: all;
     }
     .action-button {
@@ -99,7 +99,6 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    justify-content: space-between;
     padding-top: 37px;
   }
 
@@ -129,7 +128,7 @@
 
   .header-menu {
     padding-top: 44px;
-    padding-bottom: 689px;
+    padding-bottom: 680px;
   }
 }
 
