@@ -1771,6 +1771,8 @@ p {
   width: 12px;
   height: 12px;
   background-image: url(/home.3b3d998d.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   overflow: hidden;
 }
@@ -1852,8 +1854,9 @@ p {
   }
 
   .text-testimonial {
+    display: block;
     width: 750px;
-    height: 52px;
+    height: 60px;
     font-size: 16px;
     line-height: 30px;
   }
